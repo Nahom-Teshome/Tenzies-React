@@ -1,0 +1,81 @@
+body{
+  background-color: rgb(8, 18, 18);
+  display: flex;
+  /* flex-direction: column;
+  align-items: center; */
+  justify-content: center;
+}
+.die--container{
+  background-color:transparent;
+  display: grid;
+  grid-template-columns: repeat(5 ,1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+  width: 100vw;
+  height: 25vh;
+  margin-top: 4rem;
+}
+.die--face{
+  
+  background-color: rgb(30, 47, 87);
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  border-radius: .5rem;
+  user-select: none;
+ 
+}
+
+.die--value{
+  color: rgb(155, 217, 255);
+  font-size: 3rem;
+  font-weight: 700;
+  font-family:karla;
+}
+.instruction{
+  color: rgb(91, 189, 130);
+  max-width: 95vw;
+  margin: 2rem auto;
+  font-size: 2rem;
+  display: flex;
+  text-align: center;
+}
+.button--container{
+  display: flex;
+  justify-content: center;
+  margin:2.5rem 0 1rem 0 ;
+
+}
+.roll--button{
+  max-width: 10rem;
+  max-height: 7rem;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: karla;
+  background-color: rgb(13, 34, 56);
+  color: rgb(196, 246, 255);
+  border: none;
+  border-radius: .4rem;
+
+  
+}
+.roll--button:active{
+  transform:scale(1.01);
+}
+.tries{
+  background-color:rgb(13, 34, 56); 
+  color: rgb(143, 151, 175);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size:1.4rem;
+  box-shadow: 1px 1px 5px rgb(145, 199, 237);
+  max-width: 90vw;
+  margin:0 auto;
+  border-radius: 1rem;
+}
+.tries h3{
+  margin: 0;
+}
